@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>Hello world</div>
     </div>
   );
 }
+
+// main page is just the nav and the main fills the rest of the screen.
+// starts off on the about section
+// when projects or contact is clicked =>
+// the current sections fades and new one comes in
+// elements show up one at a time but quickly
 
 export default App;
