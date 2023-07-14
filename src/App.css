@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Yanone";
+  src: url("./styles/YanoneKaffeesatz-VariableFont_wght.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  background: none;
+  outline: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --mainBgColour: rgb(4, 3, 2);
+  --mainHighlightColour: rgb(255, 43, 145);
+
+  --secondaryBgColour: rgb(255, 179, 0);
+  --secondaryHighlightColour: white;
+
+  --bodyBgColor: rgb(24, 23, 22);
 }
 
-.App-header {
-  background-color: #282c34;
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
+  font-family: "Yanone";
+}
+
+.App {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  background-color: var(--mainBgColour);
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 100%;
 }

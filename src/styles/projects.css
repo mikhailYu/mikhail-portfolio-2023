@@ -1,0 +1,141 @@
+.projectsCont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  transition: opacity 200ms ease-in-out;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.projectsH1 {
+  font-size: 4rem;
+  color: var(--secondaryBgColour);
+  font-weight: bold;
+}
+
+.projBoxCont {
+  background-color: rgb(19, 19, 19);
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 600px;
+  gap: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  transition: transform 200ms ease-in-out;
+}
+
+.projImgCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 300px;
+}
+
+.projImgCont:hover {
+  filter: brightness(1.05);
+  cursor: pointer;
+}
+
+.projToolsCont {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+
+  flex-wrap: wrap;
+}
+
+.projPlay {
+  position: absolute;
+  width: 50px;
+  background-color: rgba(0, 0, 0, 0.476);
+  border-radius: 50px;
+}
+
+.projImg {
+  width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.projBottomCont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.projTitle {
+  font-size: 2rem;
+
+  color: var(--secondaryBgColour);
+  font-weight: bold;
+}
+.projDescText {
+  font-size: 1.1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.projLink {
+  width: 40px;
+  transition: transform 100ms ease-in-out;
+}
+
+.projLink:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 770px) {
+  .projBoxCont {
+    width: 500px;
+  }
+  .projImg {
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
+  .projImgCont {
+    min-height: 100px;
+  }
+
+  .projToolsCont {
+    gap: 10px;
+  }
+
+  .projDescText {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 580px) {
+  .projBoxCont {
+    width: 340px;
+  }
+  .projImg {
+    width: 340px;
+  }
+}

@@ -1,0 +1,151 @@
+.aboutCont {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  color: white;
+  overflow-x: hidden;
+}
+
+.aboutContentCont {
+  height: 90%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 700px;
+  gap: 200px;
+  transition: opacity 150ms ease-in-out;
+}
+
+.aboutImgCont {
+  background-color: var(--secondaryBgColour);
+  border-radius: 20px;
+
+  width: 200px;
+  height: 600px;
+
+  transition: margin-right 300ms ease-in-out;
+}
+
+.aboutMikhailImg {
+  height: 100%;
+  border-radius: 20px;
+}
+
+.aboutInfoCont {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.aboutInfoText {
+  font-size: 1.2rem;
+}
+
+.aboutHeaders {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.aboutH1 {
+  font-weight: bold;
+  font-size: 6rem;
+  color: var(--secondaryBgColour);
+}
+
+.aboutH2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.aboutToolsCont {
+  height: 10%;
+  width: 100%;
+  background-color: var(--mainBgColour);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  transition: opacity 50ms ease-in-out;
+}
+
+@media (max-width: 770px) {
+  .aboutImgCont {
+    width: 150px;
+    height: 500px;
+  }
+
+  .aboutContentCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+  .aboutInfoCont {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 20px;
+  }
+
+  .aboutInfoText {
+    font-size: 1.1rem;
+  }
+
+  .aboutHeaders {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .aboutH1 {
+    font-weight: bold;
+    font-size: 4rem;
+    color: var(--secondaryBgColour);
+  }
+
+  .aboutH2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .aboutMikhailImg {
+    margin-left: -10px;
+  }
+  .aboutToolsCont {
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .aboutImgCont {
+    width: 150px;
+    height: 350px;
+  }
+}
