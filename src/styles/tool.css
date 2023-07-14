@@ -27,4 +27,7 @@
 }
 
 @media (max-width: 580px) {
+  .toolImg {
+    width: 20px;
+  }
 }

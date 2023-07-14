@@ -59,6 +59,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  width: 100%;
 }
 
 .aboutH1 {
@@ -147,5 +148,12 @@
   .aboutImgCont {
     width: 150px;
     height: 350px;
+  }
+
+  .aboutH1 {
+    font-size: 3rem;
+  }
+  .aboutH2 {
+    font-size: 1.3rem;
   }
 }

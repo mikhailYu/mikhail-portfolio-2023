@@ -122,7 +122,8 @@
   }
 
   .projToolsCont {
-    gap: 10px;
+    gap: 5px;
+    padding-left: 10px;
   }
 
   .projDescText {
